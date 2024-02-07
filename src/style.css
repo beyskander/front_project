@@ -23,7 +23,6 @@ GREY COLOR: #343a40
 body {
   font-family: "Inter", sans-serif;
   color: #343a40;
-  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -154,7 +153,6 @@ img {
 
 .testimonial-box h2 {
   margin-bottom: 24px;
-  /* 20 / 24 / 30 */
   font-size: 24px;
 }
 
@@ -220,10 +218,14 @@ h3 {
 }
 
 footer {
-  margin-bottom: 48px;
-  font-size: 14px;
-  color: #495057;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
 }
+
 
 
 #scrollToTopButton {
