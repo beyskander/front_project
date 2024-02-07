@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  width: 960px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -46,8 +46,13 @@ h2 {
 .grid-3-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 80px;
+  column-gap: 10px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 .btn:link,
 .btn:visited {
@@ -120,7 +125,7 @@ img {
 .features-icon {
   stroke: #087f5b;
   width: 32px;
-  heigh: 32px;
+  height: 32px;
   margin-bottom: 24px;
 }
 
@@ -218,4 +223,24 @@ footer {
   margin-bottom: 48px;
   font-size: 14px;
   color: #495057;
+}
+
+
+#scrollToTopButton {
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99; 
+  background-color: #087f5b; 
+  color: white; 
+  border: none; 
+  outline: none; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 60%; 
+  font-size: 18px; 
+}
+
+#scrollToTopButton:hover {
+  background-color: #099268; /* Slightly lighter on hover */
 }

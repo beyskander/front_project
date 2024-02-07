@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Product</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .product-card {
+            width: 50%;
+            display: flex;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .product-info {
+            padding: 20px;
+            width: 50%;
+        }
+
+        .product-title {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .product-price {
+            color: #E44D26;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .product-description {
+            color: #777;
+            line-height: 1.5;
+        }
+
+        .add-to-cart {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .product-card {
+                flex-direction: column;
+            }
+
+            .product-info {
+                width: auto;
+            }
+        }
+
+        .btn:link,
+        .btn:visited {
+            background-color: #087f5b;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 500;
+
+            display: inline-block;
+            border-radius: 100px;
+        }
+
+        .btn:hover,
+        .btn:active {
+            background-color: #099268;
+        }
+
+        .btn--big {
+            font-size: 18px;
+            padding: 16px 32px;
+        }
+
+        .btn--small {
+            font-size: 14px;
+            padding: 8px 12px;
+        }
+
+        #addProductButton {
+            background-color: #087f5b;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        #addProductButton:hover {
+            background-color: #099268;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product-card" style="width: 60%; height: 60%;">
+        <div>
+          
+            <img src="../media/chair-1.jpg" alt="Photo" style="width: 90%; height: 100%;">
+        </div>
+        <div class="product-info">
+            <h1 class="product-title">Le Décontracté</h1>
+            <p class="product-price">750 DT</p>
+            <p class="product-description">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam
+                nunc justo sagittis suscipit ultrices.</p>
+            <br><br>
+            <div style="display:flex; justify-content: space-between; ">
+
+                <button id="addProductButton">Ajouter au panier</button>
+
+                <script>
+                    document.getElementById('addProductButton').addEventListener('click', function () {
+                        alert('Produit ajouté avec succès !');
+                    });
+                </script>
+
+                <button onclick="window.history.back()" id="addProductButton" style="margin-right: 10%;">Précédent</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
